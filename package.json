@@ -1,5 +1,5 @@
 {
-  "name": "kurdify",
+  "name": "kurdify-cli",
   "version": "1.0.0",
   "description": "commander demo",
   "main": "dist/index.js",
