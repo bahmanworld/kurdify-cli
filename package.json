@@ -1,0 +1,27 @@
+{
+  "name": "kurdify",
+  "version": "1.0.0",
+  "description": "commander demo",
+  "main": "dist/index.js",
+  "bin": {
+    "kurdify": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/index.ts"
+  },
+  "author": "zhangsan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.0.0",
+    "enquirer": "^2.4.1",
+    "inquirer": "^12.3.1",
+    "loading-cli": "^1.1.2",
+    "node-html-parser": "^7.0.1",
+    "picocolors": "^1.1.1",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5"
+  }
+}
