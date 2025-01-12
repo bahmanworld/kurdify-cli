@@ -5,26 +5,41 @@ import loading from "loading-cli";
 import { parse } from "node-html-parser";
 import pc from "picocolors";
 import { default as enquirer } from "inquirer";
+import clear from 'clear'
 
-const loader = loading({ frames: ["🕐 ", "🕑 ", "🕒 ", "🕓 ", "🕔 ", "🕕 ", "🕖 ", "🕗 ", "🕘 ", "🕙 ", "🕚 "], color: "yellow" });
+const loader = loading({
+  frames: [
+    "🕐 ",
+    "🕑 ",
+    "🕒 ",
+    "🕓 ",
+    "🕔 ",
+    "🕕 ",
+    "🕖 ",
+    "🕗 ",
+    "🕘 ",
+    "🕙 ",
+    "🕚 ",
+  ],
+  color: "yellow",
+});
 
 program
   .name("kurdify")
   .version("1.0.0-dev")
   .description("Mine checker for every developers");
 
-
-
 program
   .command("getTitle")
   .argument("<url>", "Website for parsing its title")
   .action(async (site, options: any) => {
+    clear()
 
     await enquirer.prompt<{ password: any }>({
       name: "password",
       message: "Enter password:",
       type: "select",
-      choices: ["123", "456", "789"]
+      choices: ["123", "456", "789"],
     });
 
     const p = await enquirer.prompt<{ password: any }>({
